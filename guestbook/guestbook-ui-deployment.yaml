@@ -3,8 +3,9 @@ kind: Deployment
 metadata:
   name: guestbook-ui
 spec:
-  escbashBroken: true
   replicas: 2
+  strategy:
+    type: InvalidStrategy
   revisionHistoryLimit: 3
   selector:
     matchLabels:
