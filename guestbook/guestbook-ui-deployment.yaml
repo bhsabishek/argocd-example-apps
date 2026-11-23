@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: guestbook-ui
 spec:
-  escbashbroken: true
+  escbashBroken: true
   replicas: 2
   revisionHistoryLimit: 3
   selector:
